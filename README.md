@@ -11,12 +11,12 @@
  ## Step
 1. Copy and configure environment variable in environment.example.sh :
 
-      cp environment.example.sh environment.sh
-      vi environment.sh
+         cp environment.example.sh environment.sh
+         vi environment.sh
 
 2. Export environment variable and run pulumi up
 
-      ./environment.sh && pulumi up
+         source ./environment.sh && pulumi up
 
 
 

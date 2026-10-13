@@ -6,11 +6,7 @@
  - AWS credentials configured in your environment (for example via AWS CLI or environment variables).
  - Python 3.6 or later installed.
  - Pulumi CLI already installed and logged in.
- - if you want to generate your own key cert :
-
-        openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout node_exporter_conf/server.key -out node_exporter_conf/server.crt -subj "/C=US/ST=Indonesia/L=Yogyakarta"
-
-   **Note :** Do not change `node_exporter_conf/server.key` and `node_exporter_conf/server.key`. If you do so, you need to reconfigure `node_exporter_conf/install_node_exporter.sh`.
+ - if you want to generate your own key cert , change `openssl` command in `__main__.py`.
 
  ## Step
 1. Copy and configure environment variable in environment.example.sh :
